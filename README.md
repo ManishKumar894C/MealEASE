@@ -33,7 +33,6 @@
 ---
 
 ### 🎟️ 3. Staff & Kitchen Desk
-* **QR Coupon Scanner & Verification**: Validate and redeem student guest passes using code queries or QR validation.
 * **Kitchen Production Adjustments**: View exact student headcounts per meal slot for accurate cooking volumes.
 
 ---
@@ -85,47 +84,6 @@ app/src/main/java/com/example/
 * **Android Studio**: Ladybug / 2024.2+ or Android Studio Jellyfish / Koala.
 * **JDK**: Java 11 or Java 17.
 * **Android SDK**: Min SDK 24 (Android 7.0), Target SDK 36.
-
-### Setup Instructions
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/smart-mess.git
-   cd smart-mess
-   ```
-
-2. **Open in Android Studio**:
-   - Select **File > Open** and choose the `smart-mess` root folder.
-   - Allow Gradle sync to download dependencies automatically.
-
-3. **Configure Environment File**:
-   - Create a `.env` file in the root directory based on `.env.example`:
-     ```env
-     GEMINI_API_KEY=your_optional_gemini_api_key
-     ```
-
-4. **Build & Run**:
-   - Connect an Android physical device or start an Emulator.
-   - Press **Run 'app'** (`Shift + F10`).
-
----
-
-## 📦 Building APK / Deployment
-
-### Build Release APK Locally
-To build a standalone APK for testing or direct distribution:
-```bash
-./gradlew :app:assembleRelease
-```
-The APK will be generated at:
-`app/build/outputs/apk/release/app-release.apk`
-
-### Direct Download via GitHub Releases
-You can host APK downloads directly on GitHub:
-1. Create a tag/release on GitHub (`v1.0.0`).
-2. Attach `app-release.apk` to the Release assets.
-3. Share the direct download link:
-   `https://github.com/YOUR_USERNAME/smart-mess/releases/download/v1.0.0/app-release.apk`
 
 ---
 
